@@ -30,7 +30,7 @@ jobs:
          continue-on-error: true
          run: |
            git clone -b main https://github.com/Col-Serra/light-Queue-Enc
-           cat {{ secrets.FFMPEG }}
+           cat ${{ secrets.FFMPEG }}
        - name: Running rubbish Encoder Bot 
          timeout-minutes: 300
          continue-on-error: true
